@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">Tickets</string>
+    <string name="company_name">Company Name:</string>
+    <string name="job_status">Job Status:</string>
+
+    <string name="job_city">Job City:</string>
+    <string name="payment_method">Payment Method:</string>
+
+    <string name="street_name">Street Name:</string>
+
+
+</resources>

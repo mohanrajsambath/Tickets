@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="ticketModel"
+            type="com.ganesh.tickets.model.TicketModel" />
+    </data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/txt_company_name_label"
+            style="@style/txt_style_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="@string/company_name" />
+
+        <TextView
+            android:id="@+id/txt_company_name"
+            style="@style/txt_style_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/txt_company_name_label"
+            android:text="@{ticketModel.customer_name}" />
+
+
+        <TextView
+            android:id="@+id/txt_job_status_label"
+            style="@style/txt_style_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_company_name_label"
+            android:text="@string/job_status" />
+
+        <TextView
+            android:id="@+id/txt_job_status_name"
+            style="@style/txt_style_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_company_name_label"
+            android:layout_toRightOf="@+id/txt_job_status_label"
+            android:text="@{ticketModel.status}" />
+
+
+        <TextView
+            android:id="@+id/txt_job_city_label"
+            style="@style/txt_style_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_job_status_label"
+            android:text="@string/job_city" />
+
+        <TextView
+            android:id="@+id/txt_job_city_name"
+            style="@style/txt_style_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_job_status_label"
+            android:layout_toRightOf="@+id/txt_job_city_label"
+            android:text="@{ticketModel.job_city}" />
+
+
+        <TextView
+            android:id="@+id/txt_payment_method_label"
+            style="@style/txt_style_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_job_city_label"
+            android:text="@string/payment_method" />
+
+        <TextView
+            android:id="@+id/txt_payment_method_value"
+            style="@style/txt_style_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_job_city_label"
+            android:layout_toRightOf="@+id/txt_payment_method_label"
+            android:text="@{ticketModel.payment_method}" />
+
+
+        <TextView
+            android:id="@+id/txt_job_street"
+            style="@style/txt_style_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_payment_method_label"
+            android:text="@string/street_name" />
+
+        <TextView
+            android:id="@+id/txt_job_street_value"
+            style="@style/txt_style_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_payment_method_label"
+            android:layout_toRightOf="@+id/txt_job_street"
+            android:text="@{ticketModel.job_street}" />
+
+
+    </RelativeLayout>
+
+</layout>
